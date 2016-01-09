@@ -9,6 +9,11 @@ import java.util.concurrent.TimeUnit;
  */
 public class AsyncTaskTest extends AndroidTestCase {
 
+    /**
+     * Compliments to @JeremyAtUdacity for the code in this test
+     *
+     * https://discussions.udacity.com/t/writing-tests-for-async-task/25482/9
+     */
     public final void testSuccessJokeReturn() {
         String joke = null;
         try {
