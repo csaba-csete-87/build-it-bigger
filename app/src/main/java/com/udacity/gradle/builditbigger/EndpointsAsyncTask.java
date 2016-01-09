@@ -31,7 +31,7 @@ public class EndpointsAsyncTask extends AsyncTask<Context, Void, String> {
 //                    // - turn off compression when running against local devappserver
 //                    .setRootUrl("http://10.0.2.2:8080/_ah/api/")
             MyApi.Builder builder = new MyApi.Builder(AndroidHttp.newCompatibleTransport(), new AndroidJsonFactory(), null)
-                    .setRootUrl("https://udacitybuilditbigger-1185.appspot.com/_ah/api/")
+                    .setRootUrl(Constants.API_URL)
                     .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
                         @Override
                         public void initialize(AbstractGoogleClientRequest<?> abstractGoogleClientRequest) throws IOException {
